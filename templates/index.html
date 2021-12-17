@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Decision Tree Deposit
+    </title>
+</head>
+<!---'age', 'job', 'marital', 'education', 'balance', 'housing', 'loan'-->
+
+<body>
+    <div class="form">
+        <form method="POST" , action="{{url_for('ambil')}}">
+            <label for=""> Umur </label><br>
+            <input type="text" name='age1'>
+            <br><br>
+
+            <label for=""> Pekerjaan </label><br>
+            <input type="radio" name='job1' value='0'><label for="job1"> Admin</label>
+            <input type="radio" name='job1' value='1'><label for="job1"> Blue-Collar</label>
+            <input type="radio" name='job1' value='2'><label for="job1"> Enterpreneur</label>
+            <input type="radio" name='job1' value='3'><label for="job1"> Huusemaid</label>
+            <input type="radio" name='job1' value='4'><label for="job1"> Management</label>
+            <input type="radio" name='job1' value='5'><label for="job1"> Retired</label>
+            <input type="radio" name='job1' value='6'><label for="job1"> Self-employed</label>
+            <input type="radio" name='job1' value='7'><label for="job1"> Services</label>
+            <input type="radio" name='job1' value='8'><label for="job1"> Student</label>
+            <input type="radio" name='job1' value='9'><label for="job1"> Technician</label>
+            <input type="radio" name='job1' value='10'><label for="job1"> Unemployed</label>
+            <br><br>
+
+            <label for=""> Status Pernikahan </label><br>
+            <input type="radio" name='marital1' value='0'><label for="marital1"> Divorced</label>
+            <input type="radio" name='marital1' value='1'><label for="marital1"> Married</label>
+            <input type="radio" name='marital1' value='2'><label for="marital1"> Single</label>
+            <br><br>
+
+            <label for=""> Pendidikan </label><br>
+            <input type="radio" name='education1' value='0'><label for="education1"> Primary</label>
+            <input type="radio" name='education1' value='1'><label for="education1"> Secondary</label>
+            <input type="radio" name='education1' value='2'><label for="education1"> Tertiary</label>
+            <br><br>
+
+            <label for=""> Saldo </label><br>
+            <input type="text" name='balance1'>
+            <br><br>
+
+            <label for=""> Ada cicilan rumah? </label><br>
+            <input type="radio" name='housing1' value='0'><label for="housing1"> No</label>
+            <input type="radio" name='housing1' value='1'><label for="housing1"> Yes</label>
+            <br><br>
+
+            <label for=""> Ada pinjaman kredit lain? </label><br>
+            <input type="radio" name='loan1' value='0'><label for="loan1"> No</label>
+            <input type="radio" name='loan1' value='1'><label for="loan1"> Yes</label>
+            <br><br>
+
+            <input type="submit" , value="prediksi">
+        </form>
+    </div>
+</body>
+
+</html>
